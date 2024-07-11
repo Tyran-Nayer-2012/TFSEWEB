@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FOOTER */
+.logo {
+    width: 120px;
+}
+
+.footer-main {
+    padding: 80px 35px 40px;
+    width: 100%;
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-submain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer-upper-div {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #6C6D6D;
+}
+
+.footer-lower-div {
+    font-weight: 500;
+    font-size: 18px;
+    color: #6C6D6D;
+}
+
+.footer-lower-ptag {
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.footer-lower-ptag:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    color: #5DBDF9;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.playstore-button {
+    background: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.playstore-button img {
+    width: 130px;
+    height: 30px;
+}
+
+.playstore-button:hover {
+    transform: translateY(-8px);
+}
+
+.appstore-button {
+    background: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.appstore-button img {
+    width: 130px;
+    height: 30px;
+}
+
+.appstore-button:hover {
+    transform: translateY(-8px);
+}
+
+.details-main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-follow-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.details-footer-ptag {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6D6D;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.links-footer-privacy-terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.details-footer-ptag-privacy {
+    color: #6C6D6D;
+    transition: 0.3s all ease-in-out;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.details-footer-ptag-privacy:hover {
+    color: #5DBDF9;
+}
+
+.details-footer-ptag-terms {
+    color: #6C6D6D;
+    transition: 0.3s all ease-in-out;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.details-footer-ptag-terms:hover {
+    color: #5DBDF9;
+}
+
+.icon-social {
+    color: #5DBDF9;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .footer-submain {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .social-buttons {
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+
+    .details-main-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .links-footer {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 400px) {
+    .social-buttons {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .links-footer-privacy-terms {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer-upper-div {
+        font-size: 20px;
+    }
+
+    .footer-lower-div {
+        font-size: 14px;
+    }
+}
